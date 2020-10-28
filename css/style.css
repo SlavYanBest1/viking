@@ -133,6 +133,7 @@ ul {
   line-height: 84px;
   color: #85ccdc;
   padding-top: 444px;
+  margin-bottom: 40px;
 }
 
 .video__text span {
@@ -143,13 +144,30 @@ ul {
 .video__btn {
   padding-left: 112px;
   position: relative;
+  margin-right: 230px;
 }
 
 .video__btn::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100px;
   height: 100px;
+  top: -40px;
   left: 0;
-  background-image: url('../images/youtube-bth.svg');
+  background-image: url("../images/youtube-bth.svg");
+}
+
+.seasons__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 100 75px;
+}
+
+.seasons__item {
+  width: 350px;
+  height: 250px;
+  background-image: url("../images/seasons-image-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
