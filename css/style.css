@@ -160,14 +160,44 @@ ul {
 .seasons__inner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 100 75px;
+  grid-gap: 100px 75px;
+  counter-reset: number;
 }
 
 .seasons__item {
   width: 350px;
   height: 250px;
-  background-image: url("../images/seasons-image-2.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seasons__item:hover .seasons__link {
+  opacity: 1;
+}
+
+.seasons__item::before {
+  content: "0" counter(number);
+  counter-increment: number;
+  position: absolute;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 112px;
+  color: #600e09;
+  left: 0;
+  top: -72px;
+  z-index: -1;
+}
+
+.seasons__link {
+  font-size: 36px;
+  line-height: 42px;
+  padding: 12px 78px 11px;
+  background-color: #0e0e0e;
+  opacity: 0;
 }
