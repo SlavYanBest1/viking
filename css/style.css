@@ -228,6 +228,11 @@ menu__list-link--active {
   max-width: 775px;
 }
 
+.heroes__images{
+  max-width: 775px;
+  max-height: 445px;
+}
+
 .heroes__slider-text {
   max-width: 350px;
 }
